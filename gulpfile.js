@@ -97,7 +97,8 @@ gulp.task('compress-images', gulp.series('compress-pictures-images', 'compress-p
 /*--------------------------------------index.html------------------------------------------*/
 gulp.task('html', function() {
     return gulp.src('app/*.html')
-        .pipe(browserSync.reload({ stream: true }))
+        // .pipe(browserSync.reload({ stream: true }))
+        .pipe(browserSync.reload)
 });
 
 /*------------------------------------Компиляция Sass---------------------*/
@@ -112,7 +113,8 @@ gulp.task('sass', function(){
         .pipe(sass())
         .pipe(postcss(processors))
         .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении
+        .pipe(browserSync.reload)
+        // .pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении
 });
 
 // var cssFiles = [ //файлы в том порядке, в котором должны быть добавлены в общий файл
@@ -135,7 +137,8 @@ gulp.task('styles', function () {
         .pipe(cssnano())// Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('dist/css/'))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload)
+        // .pipe(browserSync.reload({stream: true}));
         // .pipe(browserSync.stream());
 });
 
@@ -155,7 +158,8 @@ gulp.task('scripts', function () {
             toplevel: true //максимальный уровень минификации
         }))
         .pipe(gulp.dest('dist/js/'))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload)
+        // .pipe(browserSync.reload({stream: true}));
         // .pipe(browserSync({ stream: true }));
 });
 
@@ -169,8 +173,9 @@ gulp.task('pug', function() {
             pretty: true
         }))
         .pipe(gulp.dest('app/'))
-        .pipe(browserSync.reload({stream: true})) //И перезагрузим сервер
-        // .pipe(reload({ stream: true })) //И перезагрузим сервер
+        .pipe(browserSync.reload)
+        // .pipe(browserSync.reload({stream: true})) //И перезагрузим сервер
+        // .pipe(browserSync({ stream: true })) //И перезагрузим сервер
 });
 
 //удалить все в указанной папке

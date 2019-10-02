@@ -97,7 +97,8 @@ gulp.task('compress-images', gulp.series('compress-pictures-images', 'compress-p
 /*--------------------------------------index.html------------------------------------------*/
 gulp.task('html', function() {
     return gulp.src('app/*.html')
-        .pipe(browserSync.reload({ stream: true }))
+        // .pipe(browserSync.reload({ stream: true }))
+    gulp.watch("*.html").on("change", browserSync.reload);
 });
 
 /*------------------------------------Компиляция Sass---------------------*/

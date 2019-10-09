@@ -7,56 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--<link rel="stylesheet" href="../dist/css/libs.min.css">-->
 </head>
 <body>
 
 <header class="header">
-    <p class="header__text">Hello, my name is John Doe and I am</p>
-    <h1 class="header__title">FULL STACK WEB DEVELOPER</h1>
-    <p class="header__text">creating modern and responsive Web Application</p>
-    <a href="#" class="header__btn"></a>
+    <div class="header-content">
+        <p class="header-content__text">Hello, my name is John Doe and I am</p>
+        <h1 class="header-content__title">FULL STACK WEB DEVELOPER</h1>
+        <p class="header-content__text">creating modern and responsive Web Application</p>
+    </div>
+    <a href="#navigation" class="header__btn"><span></span></a>
 </header>
 
-<div class="navigation">
-    <a href="#" class="navigation__logo">JOHN DOE</a>
-    <nav class="navigation-block">
-        <ul class="navigation-block-menu">
-            <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Home</a></li>
-            <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Services</a></li>
-            <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Works</a></li>
-            <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Skills</a></li>
-            <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Testimonials</a></li>
-            <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Contact</a></li>
-        </ul>
-    </nav>
+<div id="navigation" class="navigation">
+    <div class="container navigation__wrap">
+        <a href="#" class="navigation__logo">JOHN DOE</a>
+        <nav class="navigation-block">
+            <ul class="navigation-block-menu">
+                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link active">Home</a></li>
+                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Services</a></li>
+                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Works</a></li>
+                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Skills</a></li>
+                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Testimonials</a></li>
+                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
 
-<section class="services">
-    <h2 class="title">THIS IS WHAT I DO</h2>
-    <p class="paragraph">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
-    <div class="services-block">
-        <div class="services-block-item">
-            <h3 class="services-block-item__title">WEB DESIGN</h3>
-            <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
-        </div>
-        <div class="services-block-item">
-            <h3 class="services-block-item__title">WEB PROGRAMMING</h3>
-            <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
-        </div>
-        <div class="services-block-item">
-            <h3 class="services-block-item__title">BRANDING</h3>
-            <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
-        </div>
-        <div class="services-block-item">
-            <h3 class="services-block-item__title">CONSULTATION</h3>
-            <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
+<section class="services bg-gray">
+    <div class="container container-pd">
+        <h2 class="title">THIS IS WHAT I DO</h2>
+        <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+        <div class="services-block">
+            <div class="services-block-item">
+                <h3 class="services-block-item__title">WEB DESIGN</h3>
+                <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
+            </div>
+            <div class="services-block-item">
+                <h3 class="services-block-item__title">WEB PROGRAMMING</h3>
+                <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
+            </div>
+            <div class="services-block-item">
+                <h3 class="services-block-item__title">BRANDING</h3>
+                <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
+            </div>
+            <div class="services-block-item">
+                <h3 class="services-block-item__title">CONSULTATION</h3>
+                <p class="services-block-item__text">Good things come to those who wait, but only the things left by those who hustle</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="works">
     <h2 class="title">My works</h2>
-    <p class="paragraph">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+    <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
     <div class="works-block">
         <div class="works-block-item">CRAZY SHARK</div>
         <div class="works-block-item">Funny tortoise</div>
@@ -69,7 +77,7 @@
 
 <section class="skills">
     <h2 class="title">My skills</h2>
-    <p class="paragraph">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+    <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
     <div class="skills-block">
         <div class="skills-block-item">Programming</div>
         <div class="skills-block-item">Design</div>
@@ -87,7 +95,7 @@
 
 <section class="clients">
     <h2 class="title">What my clients say</h2>
-    <p class="paragraph">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+    <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
     <div class="clients-slider">
         <!--<div class="clients-slider__wrap">-->
             <div class="clients-slider__item"></div>
@@ -98,7 +106,7 @@
 
 <section class="contact">
     <h2 class="title">Drop me a line</h2>
-    <p class="paragraph">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+    <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
     <form action="#" method="post" class="contact-form">
         <input type="text" name="name" class="contact-form__input" placeholder="Name">
         <input type="email" name="email" class="contact-form__input" placeholder="E-mail">

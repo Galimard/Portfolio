@@ -1,7 +1,7 @@
 //подключение модуля галпа
 var gulp = require('gulp'),
        sass = require('gulp-sass'), //Подключаем Sass пакет
-       // rename      = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
+       rename      = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
        // imagemin    = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
        // pngquant    = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
        // cache       = require('gulp-cache'), // Подключаем библиотеку кеширования
@@ -14,19 +14,42 @@ var gulp = require('gulp'),
        // spritesmith = require('gulp.spritesmith'), //Сборка растровых спрайтов
        // postcss = require('gulp-postcss'), //Подключение postcss
        // mqpacker = require('css-mqpacker'), //Оптимизация медиа-запросов
-       // concat = require('gulp-concat'), //объединение файлов
+       concat = require('gulp-concat'), //объединение файлов
        autoprefixer = require('gulp-autoprefixer'), //авто префиксы
-       // cssnano = require('gulp-cssnano'), //Сжатие CSS-файлов
+       cssnano = require('gulp-cssnano'), //Сжатие CSS-файлов
        // uglify = require('gulp-uglify'), //минимизация js
        // del = require('del'), //очищение папок от файлов
        browserSync = require('browser-sync').create(); //обновление браузера
 
+/*---------------------------------преобразование scss-------------------*/
 gulp.task('sass', function() { // Создаем таск Sass
-    return gulp.src('app/sass/style.sсss') // Берем источник
+    return gulp.src('app/sass/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
+/*---------------------------------Сборка библиотек стилей в один файл-------------------*/
+var cssFiles = [ //файлы в том порядке, в котором должны быть добавлены в общий файл
+  'app/css/style.css',
+  'app/css/media.css'
+];
+
+//запустить на продакшене, один раз, не отслеживать??
+gulp.task('styles', function () {
+    //'./src/css/**/*.css'
+    return gulp.src(cssFiles) // Выбираем файл для минификации
+
+        .pipe(concat('libs.css'))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(cssnano())// Сжимаем
+        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+        .pipe(gulp.dest('dist/css/'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
@@ -39,24 +62,13 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/sass/**/*.sсss', gulp.parallel('sass')); // Наблюдение за sass файлами
+    gulp.watch('app/sass/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
+    gulp.watch("app/*.html").on('change', browserSync.reload); //наблюдение за html файлами
 });
 
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
 
-// function watch() {
-//     browserSync.init({
-//         server: {
-//             baseDir: "./"
-//         }
-//     });
-//     //Следить за CSS файлами
-//     gulp.watch('./src/css/**/*.css', styles);
-//     //Следить за JS файлами
-//     gulp.watch('./src/js/**/*.js', scripts);
-//     //При изменении HTML запустить синхронизацию
-//     gulp.watch("./*.html").on('change', browserSync.reload);
-// }
+
 
 
 

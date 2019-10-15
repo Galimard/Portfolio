@@ -67,12 +67,12 @@
         <h2 class="title">My works</h2>
         <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
         <div class="works-block">
-            <div class="works-block-item">CRAZY SHARK</div>
-            <div class="works-block-item">Funny tortoise</div>
-            <div class="works-block-item">The hat</div>
-            <div class="works-block-item">Bang Bang</div>
-            <div class="works-block-item">Crypton dude</div>
-            <div class="works-block-item">Don't poke</div>
+            <div class="works-block-item works-block-item--1">CRAZY SHARK</div>
+            <div class="works-block-item works-block-item--2">Funny tortoise</div>
+            <div class="works-block-item works-block-item--3">The hat</div>
+            <div class="works-block-item works-block-item--4">Bang Bang</div>
+            <div class="works-block-item works-block-item--5">Crypton dude</div>
+            <div class="works-block-item works-block-item--6">Don't poke</div>
         </div>
     </div>
 </section>
@@ -92,9 +92,11 @@
 </section>
 
 <section class="start">
-    <h3 class="start__title">ARE YOU READY TO START?</h3>
-    <p class="start__text">I'm available for freelance projects.</p>
-    <a href="#" class="start__btn">Hire me</a>
+    <div class="container">
+        <h3 class="start__title">ARE YOU READY TO START?</h3>
+        <p class="start__text">I'm available for freelance projects.</p>
+        <a href="#" class="start__btn">Hire me</a>
+    </div>
 </section>
 
 <section class="clients bg-gray">
@@ -117,21 +119,23 @@
         <form action="#" method="post" class="contact-form">
             <input type="text" name="name" class="contact-form__input" placeholder="Name">
             <input type="email" name="email" class="contact-form__input" placeholder="E-mail">
-            <textarea name="message" class="contact-form__textarea" placeholder="Message"></textarea>
+            <textarea name="message" class="contact-form__textarea" placeholder="Message" rows="7"></textarea>
             <button type="submit" class="contact-form__btn">Send message</button>
         </form>
     </div>
 </section>
 
 <footer class="footer">
-    <div class="footer-socials">
-        <div class="footer-socials__item">vk</div>
-        <div class="footer-socials__item">f</div>
-        <div class="footer-socials__item">e</div>
-    </div>
-    <p class="footer__love">Made with love</p>
-    <div class="footer-copyright">
-        &copy; 2019 Portfolio | Images: <a href="https://unsplash.com/">Unsplash</a> & <a href="https://zoomwalls.com/">Zoomwalls</a>
+    <div class="container">
+        <div class="footer-socials">
+            <a href="#" class="footer-socials__item footer-socials__vk"><span class="visually-hidden">vkontakte</span></a>
+            <a href="#" class="footer-socials__item footer-socials__fb"><span class="visually-hidden">fb</span></a>
+            <a href="#" class="footer-socials__item footer-socials__em"><span class="visually-hidden">e</span></a>
+        </div>
+        <p class="footer__love">Made with love</p>
+        <div class="footer-copyright">
+            &copy; 2019 Portfolio | Images: <a href="https://unsplash.com/" class="footer-copyright__link">Unsplash</a> & <a href="https://zoomwalls.com/" class="footer-copyright__link">Zoomwalls</a>
+        </div>
     </div>
 </footer>
 

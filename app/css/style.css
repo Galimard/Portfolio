@@ -291,9 +291,229 @@ input[type='radio'].visually-hidden {
 .works-block-item {
   width: 360px;
   height: 225px;
-  outline: 1px solid red;
-  margin: 0 25px 25px 0; }
+  margin: 0 25px 25px 0;
+  position: relative;
+  /*bg*/ }
+
+.works-block-item::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(158, 81, 6, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .works-block-item:nth-child(3),
 .works-block-item:nth-child(6) {
   margin-right: 0; }
+
+.works-block-item--1 {
+  background: url("../img/item-1.jpg") center center no-repeat;
+  background-size: contain; }
+
+.works-block-item--2 {
+  background: url("../img/item-2.jpg") center center no-repeat;
+  background-size: contain; }
+
+.works-block-item--3 {
+  background: url("../img/item-3.jpg") center center no-repeat;
+  background-size: contain; }
+
+.works-block-item--4 {
+  background: url("../img/item-4.jpg") center center no-repeat;
+  background-size: contain; }
+
+.works-block-item--5 {
+  background: url("../img/item-5.jpg") center center no-repeat;
+  background-size: contain; }
+
+.works-block-item--6 {
+  background: url("../img/item-6.jpg") center center no-repeat;
+  background-size: contain; }
+
+/*------------------------------------------------------skills----------------------------------------------------*/
+/*------------------------------------------------------start----------------------------------------------------*/
+.start {
+  padding: 50px 0;
+  background: url("../img/item-3.jpg") top center no-repeat;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px; }
+
+.start__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+.start__text {
+  margin-bottom: 30px; }
+
+.start__btn {
+  display: block;
+  width: 110px;
+  height: 35px;
+  line-height: 35px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #222222;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.start__btn:hover {
+  background: white;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+
+/*-----------------------------------------------clients------------------------------------------------*/
+/*-----------------------------------------------contact------------------------------------------------*/
+.contact-form {
+  width: 555px;
+  margin: 60px auto 0; }
+
+.contact-form__input,
+.contact-form__textarea,
+.contact-form__btn {
+  display: block;
+  width: 100%; }
+
+.contact-form__input,
+.contact-form__textarea {
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #D8E1E4;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 3px; }
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  border-color: rgba(135, 135, 135, 0.7);
+  outline: none; }
+
+.contact-form__input::-webkit-input-placeholder,
+.contact-form__textarea::-webkit-input-placeholder {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: #555;
+  font-size: 12px;
+  font-weight: 400; }
+
+.contact-form__input:-moz-placeholder,
+.contact-form__textarea:-moz-placeholder {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: #555;
+  font-size: 12px;
+  font-weight: 400; }
+
+.contact-form__input::-moz-placeholder {
+  color: #555;
+  font-size: 12px;
+  font-weight: 400; }
+
+.contact-form__input:-ms-input-placeholder {
+  color: #555;
+  font-size: 12px;
+  font-weight: 400; }
+
+.contact-form__input:focus::-webkit-input-placeholder,
+.contact-form__textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.contact-form__input:focus:-moz-placeholder,
+.contact-form__textarea:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.contact-form__input:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.contact-form__input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.contact-form__btn {
+  padding: 10px 25px;
+  font-size: 13px;
+  background: rgba(17, 17, 17, 0.8);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.contact-form__btn:hover {
+  background: #111111;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+
+/*-----------------------------------------------footer------------------------------------------------*/
+.footer {
+  background: #222222;
+  text-align: center;
+  padding: 40px 0;
+  color: #ffffff; }
+
+.footer-socials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px; }
+
+.footer-socials__item {
+  width: 36px;
+  height: 36px;
+  display: block;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px; }
+
+.footer-socials__vk {
+  background: url("../img/icons/vk-social-network-logo.svg") center center no-repeat; }
+
+#vk_svg {
+  fill: red; }
+
+.footer-socials__item:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: border-bottom-color 0.3s ease;
+  -o-transition: border-bottom-color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease; }
+
+.footer__love {
+  margin-bottom: 15px; }
+
+.footer-copyright__link {
+  color: #E7746F;
+  border-bottom: 1px dotted #fff; }
+
+.footer-copyright__link:hover {
+  text-decoration: none;
+  color: #999;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }

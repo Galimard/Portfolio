@@ -315,3 +315,22 @@ input[type='radio'].visually-hidden {
   color: $fontColorGrey;
   line-height: 25px;
 }
+
+/*-----------------------------------------------works------------------------------------------------*/
+.works-block {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-block-item {
+  width: 360px;
+  height: 225px;
+  outline: 1px solid red;
+  margin: 0 25px 25px 0;
+}
+
+.works-block-item:nth-child(3),
+.works-block-item:nth-child(6) {
+  margin-right: 0;
+}

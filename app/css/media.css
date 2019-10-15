@@ -1,3 +1,8 @@
+@media all and (max-width: 1200px) {
+  .works-block-item {
+    width: 293px;
+    height: 183px; } }
+
 @media all and (max-width: 340px) {
   .header-content__title {
     font-size: 30px; } }

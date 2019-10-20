@@ -8,6 +8,8 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <!--<link rel="stylesheet" href="../dist/css/libs.min.css">-->
 </head>
 <body>
@@ -23,21 +25,21 @@
 
 <div id="navigation" class="navigation">
     <div class="container navigation__wrap">
-        <a href="#" class="navigation__logo">JOHN DOE</a>
+        <a href="#" class="navigation__logo">Frontender</a>
         <nav class="navigation-block">
             <ul class="navigation-block-menu">
                 <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link active">Home</a></li>
-                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Services</a></li>
-                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Works</a></li>
-                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Skills</a></li>
-                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Testimonials</a></li>
-                <li class="navigation-block-menu__item"><a href="#" class="navigation-block-menu__link">Contact</a></li>
+                <li class="navigation-block-menu__item"><a href="#services" class="navigation-block-menu__link">Services</a></li>
+                <li class="navigation-block-menu__item"><a href="#works" class="navigation-block-menu__link">Works</a></li>
+                <li class="navigation-block-menu__item"><a href="#skills" class="navigation-block-menu__link">Skills</a></li>
+                <li class="navigation-block-menu__item"><a href="#clients" class="navigation-block-menu__link">Testimonials</a></li>
+                <li class="navigation-block-menu__item"><a href="#contact" class="navigation-block-menu__link">Contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
 
-<section class="services bg-gray">
+<section id="services" class="services bg-gray">
     <div class="container container-pd">
         <h2 class="title">THIS IS WHAT I DO</h2>
         <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
@@ -62,22 +64,52 @@
     </div>
 </section>
 
-<section class="works">
+<section id="works" class="works">
     <div class="container container-pd">
         <h2 class="title">My works</h2>
         <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
         <div class="works-block">
-            <div class="works-block-item works-block-item--1">CRAZY SHARK</div>
-            <div class="works-block-item works-block-item--2">Funny tortoise</div>
-            <div class="works-block-item works-block-item--3">The hat</div>
-            <div class="works-block-item works-block-item--4">Bang Bang</div>
-            <div class="works-block-item works-block-item--5">Crypton dude</div>
-            <div class="works-block-item works-block-item--6">Don't poke</div>
+            <div class="works-block-item works-block-item--1">
+                <a href="#" class="works-block-item__link">
+                    <h3 class="works-block-item__title">CRAZY <span>SHARK</span></h3>
+                    <p class="works-block-item__text">Lily likes to play with crayons and pencils</p>
+                </a>
+            </div>
+            <div class="works-block-item works-block-item--2">
+                <a href="#" class="works-block-item__link">
+                    <h3 class="works-block-item__title">CRAZY <span>SHARK</span></h3>
+                    <p class="works-block-item__text">Lily likes to play with crayons and pencils</p>
+                </a>
+            </div>
+            <div class="works-block-item works-block-item--3">
+                <a href="#" class="works-block-item__link">
+                    <h3 class="works-block-item__title">CRAZY <span>SHARK</span></h3>
+                    <p class="works-block-item__text">Lily likes to play with crayons and pencils</p>
+                </a>
+            </div>
+            <div class="works-block-item works-block-item--4">
+                <a href="#" class="works-block-item__link">
+                    <h3 class="works-block-item__title">CRAZY <span>SHARK</span></h3>
+                    <p class="works-block-item__text">Lily likes to play with crayons and pencils</p>
+                </a>
+            </div>
+            <div class="works-block-item works-block-item--5">
+                <a href="#" class="works-block-item__link">
+                    <h3 class="works-block-item__title">CRAZY <span>SHARK</span></h3>
+                    <p class="works-block-item__text">Lily likes to play with crayons and pencils</p>
+                </a>
+            </div>
+            <div class="works-block-item works-block-item--6">
+                <a href="#" class="works-block-item__link">
+                    <h3 class="works-block-item__title">CRAZY <span>SHARK</span></h3>
+                    <p class="works-block-item__text">Lily likes to play with crayons and pencils</p>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="skills bg-gray">
+<section id="skills" class="skills bg-gray">
     <div class="container container-pd">
         <h2 class="title">My skills</h2>
         <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
@@ -99,20 +131,31 @@
     </div>
 </section>
 
-<section class="clients bg-gray">
+<section id="clients" class="clients bg-gray">
     <div class="container container-pd">
         <h2 class="title">What my clients say</h2>
         <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+        <span class="clients-bar"></span>
         <div class="clients-slider">
-            <!--<div class="clients-slider__wrap">-->
-            <div class="clients-slider__item"></div>
-            <div class="clients-slider__item"></div>
-            <!--</div>-->
+            <div class="clients-slider-item active">
+                <!--<span class="clients-bar"></span>-->
+                <div class="clients-slider-item-text">
+                    <p class="clients-slider-item-text__title">Work with John was a pleasure. He understood exactly what I wanted and created an awesome site for my company.</p>
+                    <span class="clients-slider-item-text__subscr">Pino Caruso</span>
+                </div>
+            </div>
+            <div class="clients-slider-item">
+                <!--<span class="clients-bar"></span>-->
+                <div class="clients-slider-item-text">
+                    <p class="clients-slider-item-text__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, sint.</p>
+                    <span class="clients-slider-item-text__subscr">bla bla</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
     <div class="container container-pd">
         <h2 class="title">Drop me a line</h2>
         <p class="subtitle">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
@@ -128,18 +171,39 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-socials">
-            <a href="#" class="footer-socials__item footer-socials__vk"><span class="visually-hidden">vkontakte</span></a>
-            <a href="#" class="footer-socials__item footer-socials__fb"><span class="visually-hidden">fb</span></a>
-            <a href="#" class="footer-socials__item footer-socials__em"><span class="visually-hidden">e</span></a>
+            <a href="#" class="footer-socials__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="vk_svg"  x="0px" y="0px" width="18px" height="36px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;" xml:space="preserve"><g><g>
+	<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571   l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13   c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939   l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568   c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859   c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238   c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849   c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995   c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706   c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125   c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137   c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71   c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851   c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837   c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418   c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431   c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558   c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267   c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427   c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711   C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659   c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981   c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416   c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834   c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851   c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418   c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429   c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274   l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14   c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712   C546.782,404.25,546.115,401.725,545.451,400.298z" data-original="#000000" class="active-soc" data-old_color="#000000" fill="#FFFFFF33"/>
+</g></g></svg>
+                <span class="visually-hidden">vkontakte</span></a>
+            <a href="#" class="footer-socials__item">
+                <?xml version="1.0"?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="18px" height="36px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve"><g><g>
+	<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" data-original="#000000" class="active-soc" data-old_color="#000000" fill="#FFFFFF33"/>
+</g></g> </svg>
+                <span class="visually-hidden">fb</span></a>
+            <a href="#" class="footer-socials__item">
+                <?xml version="1.0"?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="18px" height="36px" viewBox="0 0 511.626 511.626" style="enable-background:new 0 0 511.626 511.626;" xml:space="preserve"><g><g>
+	<g>
+		<path d="M49.106,178.729c6.472,4.567,25.981,18.131,58.528,40.685c32.548,22.554,57.482,39.92,74.803,52.099    c1.903,1.335,5.946,4.237,12.131,8.71c6.186,4.476,11.326,8.093,15.416,10.852c4.093,2.758,9.041,5.852,14.849,9.277    c5.806,3.422,11.279,5.996,16.418,7.7c5.14,1.718,9.898,2.569,14.275,2.569h0.287h0.288c4.377,0,9.137-0.852,14.277-2.569    c5.137-1.704,10.615-4.281,16.416-7.7c5.804-3.429,10.752-6.52,14.845-9.277c4.093-2.759,9.229-6.376,15.417-10.852    c6.184-4.477,10.232-7.375,12.135-8.71c17.508-12.179,62.051-43.11,133.615-92.79c13.894-9.703,25.502-21.411,34.827-35.116    c9.332-13.699,13.993-28.07,13.993-43.105c0-12.564-4.523-23.319-13.565-32.264c-9.041-8.947-19.749-13.418-32.117-13.418H45.679    c-14.655,0-25.933,4.948-33.832,14.844C3.949,79.562,0,91.934,0,106.779c0,11.991,5.236,24.985,15.703,38.974    C26.169,159.743,37.307,170.736,49.106,178.729z" data-original="#000000" class="active-soc" data-old_color="#000000" fill="#FFFFFF33"/>
+        <path d="M483.072,209.275c-62.424,42.251-109.824,75.087-142.177,98.501c-10.849,7.991-19.65,14.229-26.409,18.699    c-6.759,4.473-15.748,9.041-26.98,13.702c-11.228,4.668-21.692,6.995-31.401,6.995h-0.291h-0.287    c-9.707,0-20.177-2.327-31.405-6.995c-11.228-4.661-20.223-9.229-26.98-13.702c-6.755-4.47-15.559-10.708-26.407-18.699    c-25.697-18.842-72.995-51.68-141.896-98.501C17.987,202.047,8.375,193.762,0,184.437v226.685c0,12.57,4.471,23.319,13.418,32.265    c8.945,8.949,19.701,13.422,32.264,13.422h420.266c12.56,0,23.315-4.473,32.261-13.422c8.949-8.949,13.418-19.694,13.418-32.265    V184.437C503.441,193.569,493.927,201.854,483.072,209.275z" data-original="#000000" class="active-soc" data-old_color="#000000" fill="#FFFFFF33"/>
+	</g>
+</g></g> </svg>
+                <span class="visually-hidden">e</span></a>
         </div>
-        <p class="footer__love">Made with love</p>
+        <p class="footer-love">Made with <span class="footer-love__heart"></span></p>
         <div class="footer-copyright">
             &copy; 2019 Portfolio | Images: <a href="https://unsplash.com/" class="footer-copyright__link">Unsplash</a> & <a href="https://zoomwalls.com/" class="footer-copyright__link">Zoomwalls</a>
         </div>
     </div>
 </footer>
 
-<script src="app/js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/validate.min.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="../dist/js/lib.min.js"></script>-->
 
 </body>
 </html>
